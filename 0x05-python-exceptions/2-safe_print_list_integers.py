@@ -3,9 +3,10 @@
 def safe_print_list_integers(my_list=[], x=0):
     """Print the first x elements of a list that are integers.
 
+
     Args:
-    my_list (list): The list to print elements from.
-    x (int): The number of elements of my_list to print.
+      my_list (list): The list to print elements from.
+      x (int): The number of elements of my_list to print.
 
     Returns:
     The number of elements printed.
@@ -17,5 +18,5 @@ def safe_print_list_integers(my_list=[], x=0):
             ret += 1
         except (ValueError, TypeError):
             continue
-        print("")
-        return (ret)
+    print("")
+    return (ret)
